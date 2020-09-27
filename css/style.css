@@ -1,0 +1,403 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Black.woff2") format("woff2"),
+    url("../fonts/Gilroy-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"),
+    url("../fonts/Gilroy-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"),
+    url("../fonts/Gilroy-UltraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ol li,
+ul li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* -------------- */
+
+.header,
+.main,
+.footer {
+  max-width: 990px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header,
+.footer {
+  background-color: rgb(247, 239, 231);
+}
+
+.navigation {
+  padding: 40px 0px 40px 0px;
+  /* text-align: center; */
+}
+.header__navigation li {
+  display: inline-block;
+  font-size: 0;
+  margin: 0px 0px 0px 60px;
+}
+.header__link {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 25px;
+  background-color: rgb(240, 193, 175);
+  color: rgb(238, 6, 76);
+  border: 2px solid rgb(240, 193, 175);
+  border-radius: 15px;
+}
+.header__link:hover {
+  background-color: rgb(247, 239, 231);
+  border: 2px solid rgb(238, 6, 76);
+}
+.title {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 20px 0px 20px 0px;
+}
+.block1 {
+  margin: 0px 0px 30px 0px;
+}
+.pict1 {
+  float: left;
+}
+.text1 {
+  height: 200px;
+  overflow: auto;
+  display: inline-block;
+  font-size: 16px;
+  max-width: 550px;
+  text-align: justify;
+  display: scroll;
+  padding: 0px 20px 0px 20px;
+}
+.pict2 {
+  float: right;
+}
+.block2 {
+  margin: 0px 0px 30px 0px;
+}
+.block3 {
+  display: inline-block;
+  margin: 0px 0px 0px 25px;
+  max-width: 500px;
+}
+.img1 {
+  width: 350px;
+}
+.text2 {
+  text-align: left;
+  line-height: 1.3;
+  margin: 0px 0px 25px 0px;
+}
+.border1 {
+  padding: 0px 0px 0px 25px;
+  border-left: 5px solid green;
+}
+.textdecoration1 {
+  text-transform: uppercase;
+}
+.span1 {
+  font-weight: 700;
+  text-transform: lowercase;
+  color: brown;
+}
+.block4 {
+  max-width: 890px;
+  margin: 0px auto 30px auto;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.705);
+  padding: 30px 30px 30px 30px;
+}
+.block5 {
+  display: inline-block;
+  max-width: 550px;
+}
+.subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 20px rgba(255, 0, 0, 0.712);
+  margin: 0px 0px 20px 0px;
+}
+.text3 {
+  text-align: right;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0px 40px 20px 0px;
+}
+.block6 {
+  display: inline-block;
+  max-width: 500px;
+}
+.subtitle1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-size: 23px;
+  font-weight: 500;
+  margin: 0px 0px 30px 0px;
+}
+.text4 {
+  margin: 0px 0px 0px 30px;
+  text-indent: 30px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.img2 {
+  width: 300px;
+  box-shadow: 10px 10px 30px red;
+}
+.footerblok {
+  text-align: center;
+}
+.footerp {
+  display: inline-block;
+  margin: 30px 80px;
+}
+.footer__link {
+  color: darkgray;
+}
+.footer__link:hover {
+  color: black;
+}
+.pad1 {
+  padding: 30px 30px 30px 30px;
+}
+.span2 {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-style: italic;
+  border-bottom: 2px solid red;
+}
+.block7 {
+  display: inline-block;
+  overflow: auto;
+  max-height: 200px;
+  max-width: 600px;
+}
+.text5 {
+  text-align: right;
+  line-height: 1.5;
+  margin: 0px 30px 0px 0px;
+  font-size: 16px;
+}
+.block8 {
+  margin: 00px 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
+  border: 3px dotted grey;
+  box-shadow: inset 0px 0px 30px grey;
+}
+.span3 {
+  border-bottom: 3px dashed red;
+}
+.link {
+  font-weight: 700;
+  display: inline-block;
+  color: green;
+  padding: 0px 0px 1px 0px;
+  border-bottom: 2px dotted;
+}
+.link:hover {
+  color: red;
+  border-bottom: 2px dotted transparent;
+}
+/* ? При наведении мыши подчеркивание должно исчезач. Чтобы при этом все чтониже не прыгало, ховеру дано свойство transparent. Чтобы padding дейсвовал, надо задать свойство display: inline-block;. Расстояние до линии будет определяться высотой строки и паддингом */
+.subtitle2 {
+  font-size: 30px;
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+}
+.block9 {
+  text-align: left;
+  border: 2px solid rgba(0, 0, 0, 0.212);
+  box-shadow: 0px 0px 10px black;
+  padding: 30px 0px 30px 0px;
+  margin: 0px 0px 40px 0px;
+}
+
+.list {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+  display: inline-block;
+  max-width: 400px;
+  margin: 20px 20px 20px 80px;
+  padding: 20px 30px 20px 30px;
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 255, 0.493);
+}
+.bullit {
+  display: inline-block;
+  border: 4px solid black;
+  margin: 0px 10px 0px 0px;
+}
+.span4 {
+  border-bottom: 4px solid red;
+}
+.span5 {
+  text-decoration: line-through;
+}
+.bullit1 {
+  display: inline-block;
+  border: 5px solid red;
+  border-radius: 50%;
+  margin: 0px 10px 0px 0px;
+}
+.border2 {
+  border-radius: 20px;
+}
+.border3 {
+  margin: 0px 0px 0px 80px;
+  border-left: 20px double rgba(0, 128, 0, 0.26);
+}
+.list1 {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+  display: inline-block;
+  max-width: 400px;
+  margin: 0px 20px 0px 20px;
+  padding: 20px 30px 20px 30px;
+  box-shadow: inset 0px 0px 45px 10px rgba(0, 0, 255, 0.493);
+  border-radius: 0px 20px 30px 0px;
+}
+.span6 {
+  outline: 5px solid rgba(0, 0, 255, 0.301);
+  background-color: rgba(0, 0, 255, 0.301);
+}
+.span6:hover {
+  outline: none;
+  background-color: rgba(0, 0, 255, 0.116);
+}
+.block10,
+.block12 {
+  margin: 0px 0px 40px 0px;
+}
+.img3 {
+  /* width: 250px; */
+  max-width: 100%;
+}
+.opasity {
+  display: inline-block;
+}
+
+.opasity1 {
+  display: inline-block;
+  max-width: 250px;
+  opacity: 0.2;
+}
+.opasity2 {
+  display: inline-block;
+  max-width: 250px;
+  opacity: 0.5;
+}
+.opasity3 {
+  display: inline-block;
+  max-width: 250px;
+  opacity: 1;
+}
+.block11 {
+  margin: 0px 30px 0px 30px;
+  padding: 30px 30px 30px 30px;
+  box-shadow: 10px 10px 10px 10px rgba(255, 0, 0, 0.37);
+  border-radius: 0px 50px;
+}
+.text6 {
+  font-size: 14px;
+  padding: 15px 0px 0px 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.block13 {
+  max-width: 350px;
+  background-color: rgba(255, 127, 80, 0.349);
+  margin: 0px 0px 0px auto;
+  padding: 30px 30px 30px 30px;
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 255, 0.281);
+  border-radius: 15px;
+}
+.block13 img:hover {
+  opacity: 0;
+  visibility: hidden;
+}
+/* ? Чтобы изображение не прыгало, надо прописать и его полную прозрачность */
